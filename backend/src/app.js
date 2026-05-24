@@ -1,9 +1,9 @@
 const express = require("express");
-const dotenv = require("dotenv");
-const cors = require("cors");
+const dotenv  = require("dotenv");
+const cors    = require("cors");
 const connectDB = require("./config/db");
 
-// Register semua model agar populate() bisa bekerja
+// Load models agar populate() bisa bekerja
 require("./models/User");
 require("./models/Category");
 require("./models/Product");
@@ -17,23 +17,51 @@ connectDB();
 
 const app = express();
 
-// middleware
-app.use(cors());
+// ── Middleware ──────────────────────────────────────────
+app.use(cors({
+  origin: "*",
+  methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+}));
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-// routes
-const productRoutes = require("./routes/productRoutes");
-const categoryRoutes = require("./routes/categoryRoutes");
-app.use("/api/products", productRoutes);
-app.use("/api/categories", categoryRoutes);
+// ── Routes ──────────────────────────────────────────────
+app.use("/api/auth",      require("./routes/authRoutes"));
+app.use("/api/products",  require("./routes/productRoutes"));
+app.use("/api/categories",require("./routes/categoryRoutes"));
+app.use("/api/orders",    require("./routes/orderRoutes"));
+app.use("/api/vouchers",  require("./routes/voucherRoutes"));
 
-// route test
+// ── Health Check ────────────────────────────────────────
 app.get("/", (req, res) => {
-  res.send("API jalan 🚀");
+  res.json({
+    success: true,
+    message: "Noesantara API berjalan 🚀",
+    endpoints: {
+      auth:       "/api/auth",
+      products:   "/api/products",
+      categories: "/api/categories",
+      orders:     "/api/orders",
+      vouchers:   "/api/vouchers",
+    },
+  });
+});
+
+// ── 404 Handler ─────────────────────────────────────────
+app.use((req, res) => {
+  res.status(404).json({ success: false, message: `Route ${req.method} ${req.path} tidak ditemukan` });
+});
+
+// ── Error Handler ───────────────────────────────────────
+app.use((err, req, res, next) => {
+  console.error("Unhandled error:", err);
+  res.status(500).json({ success: false, message: "Internal server error", error: err.message });
 });
 
 const PORT = process.env.PORT || 3000;
-
 app.listen(PORT, () => {
-  console.log(`Server jalan di port ${PORT}`);
+  console.log(`✅ Server berjalan di port ${PORT}`);
 });
+
+module.exports = app;

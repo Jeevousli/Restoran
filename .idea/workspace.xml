@@ -5,6 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b6e1dd2-fd93-4690-9f4f-77c28c93e018" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/backend/src/controllers/voucherController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/routes/voucherRoutes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/lib/models/voucher_model.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/lib/services/voucher_service.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webadmin/src/components/Sidebar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webadmin/src/components/StatCard.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webadmin/src/context/AuthContext.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webadmin/src/pages/Dashboard.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webadmin/src/pages/VoucherList.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/deviceManager.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deviceManager.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
@@ -20,14 +29,7 @@
       <change beforePath="$PROJECT_DIR$/frontend/lib/screens/product_detail_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/lib/screens/product_detail_screen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/lib/services/auth_service.dart" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/lib/services/auth_service.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/lib/services/order_service.dart" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/lib/services/order_service.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/linux/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/linux/flutter/generated_plugin_registrant.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/linux/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/linux/flutter/generated_plugin_registrant.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/linux/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/linux/flutter/generated_plugins.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/windows/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/windows/flutter/generated_plugin_registrant.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/windows/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/windows/flutter/generated_plugin_registrant.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/windows/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/windows/flutter/generated_plugins.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webadmin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/webadmin/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webadmin/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/webadmin/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webadmin/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/webadmin/src/App.jsx" afterDir="false" />
@@ -51,6 +53,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "flyingpopsicle"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Jeevousli/Restoran.git",
+    "accountId": "4ed39a56-c684-4031-9417-e07a79f7ce2d"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
